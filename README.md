@@ -16,7 +16,7 @@ yarn add @akilio/app-kit
 ```
 2. Create **index.js** file with next content:
 ```js
-require('app-kit').autostart();
+require('@akilio/app-kit').autostart();
 ```
 3. Add this to your **package.json** scripts section:
 ```json
@@ -38,6 +38,10 @@ module.exports = {
 5. Create **config/index.js** file with content:
 ```js
 module.exports = {
+	service: {
+		cli: {}
+	},
+	env: {},
 	api: {
 		example: { cli: {}}
 	}
@@ -45,7 +49,7 @@ module.exports = {
 ```
 Your are ready to run! Call function with next command:
 ```bash
-yarn cli example --message Hi
+yarn cli example "Hello!"
 ```
 
 ## Building blocks
