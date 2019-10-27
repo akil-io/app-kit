@@ -1,5 +1,5 @@
 {
-  "name": "app-kit",
+  "name": "@akilio/app-kit",
   "version": "1.0.0",
   "description": "Resource loader for API based applications",
   "main": "index.js",

@@ -12,7 +12,7 @@ Main features:
 ## Installation
 1. We recommend using yarn insted of npm.
 ```bash
-yarn add app-kit
+yarn add @akilio/app-kit
 ```
 2. Create **index.js** file with next content:
 ```js
