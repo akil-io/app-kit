@@ -8,7 +8,7 @@ const { Application } = require('./lib/app');
  * @return {[type]}        [description]
  */
 function autostart(config = {}, api = {}) {
-	Application.start(loader, config, api);
+	return Application.start(loader, config, api);
 }
 
 // If user application do not have own index.js file autostart app with default params

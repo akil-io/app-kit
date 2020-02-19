@@ -1,6 +1,6 @@
 {
   "name": "@akilio/app-kit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Resource loader for API based applications",
   "main": "index.js",
   "bin": {
@@ -21,9 +21,6 @@
     "bootloader",
     "micro framework"
   ],
-  "bin": {
-    "app": "index.js"
-  },
   "license": "MIT",
   "dependencies": {
   	"yargs": "^12.0.1",
