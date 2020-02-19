@@ -8,7 +8,7 @@ const { Application } = require('./lib/app');
  * @return {[type]}        [description]
  */
 function autostart(mode = null, config = {}, api = {}) {
-	return Application.start(new ResourceLoader(mode), config, api);
+	return Application.start(ResourceLoader.getInstance(mode), config, api);
 }
 
 // If user application do not have own index.js file autostart app with default params
@@ -18,6 +18,6 @@ if (!module.parent) {
 
 module.exports = {
 	Application,
-	loader,
+	ResourceLoader,
 	autostart
 };
