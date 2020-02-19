@@ -1,4 +1,4 @@
-const loader = require('./lib/loader');
+const { ResourceLoader } = require('./lib/loader');
 const { Application } = require('./lib/app');
 
 /**
@@ -7,8 +7,8 @@ const { Application } = require('./lib/app');
  * @param  {Object} api    [description]
  * @return {[type]}        [description]
  */
-function autostart(config = {}, api = {}) {
-	return Application.start(loader, config, api);
+function autostart(mode = null, config = {}, api = {}) {
+	return Application.start(new ResourceLoader(mode), config, api);
 }
 
 // If user application do not have own index.js file autostart app with default params
